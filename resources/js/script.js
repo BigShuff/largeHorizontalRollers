@@ -8,9 +8,9 @@ backBtn.addEventListener('click', resetFunctionBackBtn);
 
 
 function resetFunctionBtn() {
-  if (container.classList.contains('rotate2')) {
+  if (container.classList.contains('rotate2')){
     container.classList.remove('rotate2');
-  } else {
+  }
     container.classList.add('rotate1');
     container.style.animationName = "none";
     requestAnimationFrame(() => {
@@ -21,12 +21,9 @@ function resetFunctionBtn() {
   }
 
 
-}
 
-  if (container.classList.contains('rotate1')) {
-    function resetFunctionBackBtn() {
-    container.classList.remove('rotate1');
-  } else {
+function resetFunctionBackBtn() {
+
     container.classList.add('rotate2');
     container.style.animationName = "none";
     requestAnimationFrame(() => {
@@ -35,7 +32,7 @@ function resetFunctionBtn() {
       }, 0);
     });
   }
-}
+
 //animation direction set to reverse
 
 
