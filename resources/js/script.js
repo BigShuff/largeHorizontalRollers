@@ -1,5 +1,5 @@
 const container = document.querySelector('.container');
-let myBtn = document.getElementById('btn');
+const btn = document.querySelector('.btn');
 const backBtn = document.querySelector('.backBtn');
 
 btn.addEventListener('click', resetFunctionBtn);
@@ -16,9 +16,9 @@ function resetFunctionBtn() {
         container.style.animationName = ""
       }, 0);
     });
-    myBtn.style.opacity = '0.5';
-    myBtn.style.cursor = 'none';
-   }
+    btn.style.opacity = '0.5';
+    btn.style.cursor = 'none';
+  }
 
    
 
@@ -32,14 +32,18 @@ function resetFunctionBackBtn() {
         container.style.animationName = ""
       }, 0);
     });
-    myBtn.style.opacity = '1';
-    myBtn.style.cursor = 'pointer';
+    btn.style.opacity = '1';
+    btn.style.cursor = 'pointer';
   }
 
 
+// const rotateForwards = {
+//   let btn = document.querySelector('.btn');
+// }
 
+// const rotateBackwards = {
 
-
+// }
 
 
 
