@@ -84,10 +84,11 @@ body{
     margin: 12% 5% 0% 5%;
 }
 
-.btn{
+#btn{
     padding: 10px;
     background-color: rgb(150, 230, 230);
     cursor: pointer;
+    
     
 }
 
@@ -113,11 +114,11 @@ body{
 }
 
 .rotate2{
-    animation-name: rotate-cube; 
+    animation-name: rotate-cube2; 
     animation-duration: 2s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
-    animation-direction: reverse;
+    /* animation-direction: reverse; */
     
     
 } 

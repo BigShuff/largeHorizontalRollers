@@ -1,11 +1,9 @@
 const container = document.querySelector('.container');
-const btn = document.querySelector('.btn');
+let myBtn = document.getElementById('btn');
 const backBtn = document.querySelector('.backBtn');
 
 btn.addEventListener('click', resetFunctionBtn);
 backBtn.addEventListener('click', resetFunctionBackBtn);
-
-
 
 function resetFunctionBtn() {
   if (container.classList.contains('rotate2')){
@@ -18,8 +16,11 @@ function resetFunctionBtn() {
         container.style.animationName = ""
       }, 0);
     });
-  }
+    myBtn.style.opacity = '0.5';
+    myBtn.style.cursor = 'none';
+   }
 
+   
 
 
 function resetFunctionBackBtn() {
@@ -31,9 +32,10 @@ function resetFunctionBackBtn() {
         container.style.animationName = ""
       }, 0);
     });
+    myBtn.style.opacity = '1';
+    myBtn.style.cursor = 'pointer';
   }
 
-//animation direction set to reverse
 
 
 
